@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,27 +27,29 @@
     <section>
         <div class="ads"></div>
         <div class="content">
-            <select name="" id="">
-                <option value="english">English</option>
-                <option value="spanish">Spanish</option>
-                <option value="french">French</option>
-                <option value="portuguese">Portuguese</option>
-                <option value="italian">Italian</option>
+            <select name="first_language_selected" id="first_language">
+                <option value="0">English</option>
+                <option value="1">French</option>
+                <option value="2">Italian</option>
+                <option value="3">Portuguese</option>
+                <option value="4">Spanish</option>
             </select>
-            <label for="">Sentence</label>
+            <label for="" id="first_sentence">Sentence</label>
             <br>
-            <select name="" id="">
-                <option value="english">English</option>
-                <option value="spanish">Spanish</option>
-                <option value="french">French</option>
-                <option value="portuguese">Portuguese</option>
-                <option value="italian">Italian</option>
+            <select name="second_language_selected" id="second_language">
+                <option value="0">English</option>
+                <option value="1">French</option>
+                <option value="2">Italian</option>
+                <option value="3">Portuguese</option>
+                <option value="4">Spanish</option>
             </select>
-            <label for="">Translated sentence</label>
+            <label for="" id="second_sentence">Translated sentence</label>
             <br>
-            <button class="randomize_button">Randomize!</button>
+            <button class="randomize_button" onclick="randomize()">Randomize!</button>
         </div>
         <div class="ads"></div>
     </section>
+
+    <script src="/js/code.js"></script>
 </body>
 </html>
